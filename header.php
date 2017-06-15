@@ -15,6 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Oleo+Script" rel="stylesheet">
 <script src="https://use.fontawesome.com/4c52521bb5.js"></script>
 
 <?php wp_head(); ?>
@@ -22,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'gemm-framework' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'RapBetter-Theme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
@@ -44,8 +45,9 @@
 		<div class="row">
       <div class="col-md-12">
 
-          <nav class="navbar" role="navigation">
-              <div class="container">
+					<div class="col-sm-2 text-center"><a href="/"><img class="gemm-header-logo" src="<?php header_image(); ?>"/></a></div>
+
+          <div class="col-sm-10 text-center"><nav class="navbar text-center" role="navigation">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
                       <button type="button"  class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -72,8 +74,7 @@
                       ?>
 
                   </div><!--end navbar-colapse-->
-              </div><!--end container-->
-          </nav>
+          </nav></div>
 
       </div><!--col-md-8-->
 

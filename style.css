@@ -1,5 +1,5 @@
 /*
-Theme Name: GEMM_Framework
+Theme Name: GEMM_Portfolio
 Theme URI: http://underscores.me/
 Author: Zach Slagowski
 Author URI: http://www.greeneyedmonstermedia.com/
@@ -892,4 +892,41 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+	background: rgba(255,255,255,.5);
+	position: relative;
+	z-index: 2;
+}
+.gemm-header-logo {
+	max-width: 200px;
+}
+
+div#bs-example-navbar-collapse-1 {
+    padding-bottom: 2em;
+}
+
+@media (max-width: 1200px) {
+	.menu-primary {
+		top: 15px;
+	}
+}
+
+@media(max-width:768px) {
+	.menu-primary {
+	  float: none;
+	}
+
+	.gemm-header-logo {
+		width: 150px;
+		margin-top: 20px;
+	}
+
+	#rb-front-header-image {
+		margin-top: 0px;
+	}
 }
