@@ -15,9 +15,26 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gemm-framework' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'gemm-framework' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'gemm-framework' ), 'gemm-framework', '<a href="https://automattic.com/" rel="designer">Zach Slagowski</a>' ); ?>
+			<div class="container">
+				<div class="row">
+					<div class="gemm-footer-icons col-md-6 text-center">
+						<?php
+
+						$query = new WP_Query( array( 'post_type' => 'gemm_footer_social' ) );
+
+						if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+
+						?>
+
+						<a href="<?php the_field('gemm-sm-footer-link'); ?>" target="__blank"><i class="fa <?php the_field('gemm-footer-icon-class'); ?>" aria-hidden="true"></i></a>
+
+						<?php endwhile; endif; wp_reset_postdata; ?>
+					</div>
+					<div class="col-md-6 gemm-copyright text-center">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="gemm-footer-logo" src="<?php header_image(); ?>"/></a></div>
+					</div>
+				</div> <!-- row -->
+			</div> <!-- container -->
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

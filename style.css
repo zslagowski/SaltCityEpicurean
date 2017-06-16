@@ -925,8 +925,67 @@ div#bs-example-navbar-collapse-1 {
 		width: 150px;
 		margin-top: 20px;
 	}
+}
 
-	#rb-front-header-image {
-		margin-top: 0px;
-	}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    background-color: #fff;
+}
+
+.gemm-footer-icons .fa {
+    font-size: 2em;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    padding: .3em;
+    margin: .5em .1em;
+}
+
+.gemm-footer-icons .fa-facebook {
+    padding: .3em .5em;
+}
+
+.gemm-footer-icons .fa-instagram {
+    padding: .3em .35em;
+}
+
+.gemm-footer-icons .fa-youtube-square {
+    padding: .3em .35em;
+}
+
+.gemm-footer-icons .fa-youtube {
+    padding: .3em .35em;
+}
+
+.gemm-footer-logo {
+    width: 45px;
+}
+
+.gemm-copyright {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+}
+
+.gemm-footer-logo {
+	width: 110px;
+}
+
+.entry-footer {
+	background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .qc-copyright {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+
+    .site-footer{
+        position: relative;
+     }
 }
