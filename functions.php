@@ -110,7 +110,7 @@ function gemm_framework_scripts() {
 
 	wp_enqueue_style( 'gemm-framework-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'gemm-framework-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.7', true );
+	wp_enqueue_script( 'gemm-framework-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.7', true );
 
 	wp_enqueue_script( 'gemm-framework-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

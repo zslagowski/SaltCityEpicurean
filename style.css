@@ -524,6 +524,10 @@ textarea {
 	border: 1px solid #000;
 }
 
+button:hover, button:active, button:focus {
+	border-color: #000;
+}
+
 .icon-bar {
 	background-color: #000;
 }
@@ -531,6 +535,23 @@ textarea {
 .navbar-nav {
 	position: relative;
 	top: -10px;
+}
+
+.navbar-collapse {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+@media (max-width: 1200px) {
+	.navbar-nav {
+		top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar-nav {
+		top: 0px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -957,6 +978,106 @@ div#bs-example-navbar-collapse-1 {
 	.gemm-header-logo {
 		width: 150px;
 		margin-top: 20px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+#gemm-front-header-image {
+	margin-top: -120px;
+}
+
+.gemm-homepage-welcome-msg-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 750px;
+}
+
+.gemm-homepage-welcome-msg {
+	color: #fff;
+	padding-top: 250px;
+}
+
+.gemm-homepage-welcome-msg {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .1em;
+	line-height: 1.2em;
+}
+
+#gemm-front-courses h2 {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	border: 3px solid #000;
+	width: 180px;
+	margin: 2em auto;
+}
+
+#gemm-front-posts h2 {
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	border: 3px solid #000;
+	width: 300px;
+	margin: 2em auto;
+}
+
+.gemm-front-posts-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+
+.gemm-front-posts-meta {
+    font-size: 1.8em;
+    font-style: italic;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.gemm-front-posts-excerpt {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    line-height: 25px;
+    margin-top: 1em;
+}
+
+.gemm-front-posts-read-more {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: #000;
+    color: #fff;
+    width: 185px;
+    margin: 2em 80%;
+    padding-right: .3em;
+    padding: .5em 1em;
+    font-weight: 700;
+}
+
+.gemm-front-posts-read-more a {
+	color: #fff;
+}
+
+.gemm-front-posts-read-more a:hover {
+    font-style: italic;
+		text-decoration: none;
+}
+
+@media (max-width: 992px) {
+	.gemm-front-posts-read-more {
+		margin: 2em 70%;
+	}
+}
+
+@media (max-width: 768px) {
+	.gemm-front-posts-read-more {
+		margin: 2em 0%;
 	}
 }
 
