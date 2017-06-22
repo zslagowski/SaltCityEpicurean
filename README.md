@@ -1,5 +1,5 @@
 # GEMM-Portfolio-Base
-General Portfolio Theme to be used.
+General Portfolio Theme to be used. Uses Bootstrap 3 framework, fontawesome icons, and Google Fonts.
 
 Plugins to Download
   -Custom Post Type UI
