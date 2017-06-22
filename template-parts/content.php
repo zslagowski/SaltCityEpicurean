@@ -27,7 +27,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<div class="text-center"><?php the_post_thumbnail(); ?></div>
+		<div class="text-center gemm-post-featured-img"><?php the_post_thumbnail(); ?></div>
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

@@ -422,12 +422,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
+	border-color: #000 #000 #000;
+	border-radius: 0;
+	background: #000;
+	color: #fff;
+	font-size: 1em;
+	font-size: 1rem;
 	line-height: 1;
 	padding: .6em 1em .4em;
 }
@@ -436,7 +436,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	border-color: #fff #fff #fff;
 }
 
 button:focus,
@@ -1081,6 +1081,73 @@ div#bs-example-navbar-collapse-1 {
 	}
 }
 
+
+/*--------------------------------------------------------------
+# single.php
+--------------------------------------------------------------*/
+.gemm-post-featured-img {
+	padding-bottom: 2em;
+}
+
+.entry-title {
+	font-size: 2.5em;
+	color: #000;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+.entry-content p {
+	font-size: 1.5em;
+}
+
+.comments-title {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.comment-content {
+	font-size: 1.5em;
+}
+
+h3#reply-title {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+#email-notes {
+	font-size: 1.5em;
+}
+
+/*--------------------------------------------------------------
+# page.php
+--------------------------------------------------------------*/
+.gemm-page-entry-title{
+	text-transform: uppercase;
+	margin: 2em 0;
+	color: #000;
+	letter-spacing: .1em;
+}
+
+.gemm-page-entry-content {
+	margin-bottom: 2em;
+}
+
+/*--------------------------------------------------------------
+# home.php
+--------------------------------------------------------------*/
+
+.gemm-blog-page-header {
+	font-size: 2.5em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #000;
+}
+
+.gemm-home-posts {
+	margin-bottom: 4em;
+	color: #000;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
