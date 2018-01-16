@@ -14,24 +14,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info" id="contact">
 			<div class="container">
 				<div class="row">
-					<div class="gemm-footer-icons col-md-6 text-center">
-						<?php
-
-						$query = new WP_Query( array( 'post_type' => 'gemm_footer_social' ) );
-
-						if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
-
-						?>
-
-						<a href="<?php the_field('gemm-sm-footer-link'); ?>" target="__blank"><i class="fa <?php the_field('gemm-footer-icon-class'); ?>" aria-hidden="true"></i></a>
-
-						<?php endwhile; endif; wp_reset_postdata; ?>
+					<div class="col-md-7 sce-footer-left text-center">
+						<?php dynamic_sidebar( 'left_footer_sidebar' ); ?>
 					</div>
-					<div class="col-md-6 gemm-copyright text-center">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="gemm-footer-logo" src="<?php header_image(); ?>"/></a></div>
+					<div class="col-md-5 sce-footer-right">
+						<?php dynamic_sidebar( 'right_footer_sidebar' ); ?>
 					</div>
 				</div> <!-- row -->
 			</div> <!-- container -->

@@ -102,15 +102,46 @@ function gemm_framework_widgets_init() {
 }
 add_action( 'widgets_init', 'gemm_framework_widgets_init' );
 
+
+function footer_left_widget_init() {
+    register_sidebar( array(
+        'name' => __( 'Left Footer Content', 'gemm-framework' ),
+        'id' => 'left_footer_sidebar',
+        'description' => __( 'Widgets in this area will be shown in the footer area.', 'gemm-framework' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="sce-footer-sidebar-title">',
+		'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'footer_left_widget_init' );
+
+function footer_right_widget_init() {
+    register_sidebar( array(
+        'name' => __( 'Right Footer Content', 'gemm-framework' ),
+        'id' => 'right_footer_sidebar',
+        'description' => __( 'Widgets in this area will be shown in the footer area.', 'gemm-framework' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="sce-footer-sidebar-title">',
+		'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'footer_right_widget_init' );
+
 /**
  * Enqueue scripts and styles.
  */
 function gemm_framework_scripts() {
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.min.css');
 
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Nunito:200,400,700|Playfair+Display', array(), 1.0);
+
 	wp_enqueue_style( 'gemm-framework-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'gemm-framework-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '3.7', true );
+
+	wp_enqueue_script( 'gemm-framework-navwalker-js', get_template_directory_uri() . '/js/navwalker.js', array( 'jquery' ), '1', true );
 
 	wp_enqueue_script( 'gemm-framework-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
