@@ -29,7 +29,7 @@
 		<div class="row">
       <div class="col-md-12">
 
-        <div class="sce-logo-button text-center"><h1><a href="#">SCE</a></h1></div>
+        <div class="sce-logo-button text-center"><h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>">SCE</a></h1></div>
 
         <div class="col-sm-12 text-center"><nav class="navbar text-center" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
